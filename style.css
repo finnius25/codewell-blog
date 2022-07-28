@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --body: #70747D;
+    --headings: #110E27;
+    --stroke: #DADADA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3.3125rem;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+}
+
+.brand-name {
+    font-size: 1.3125rem;
+    font-weight: 700;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a {
+    padding: 0.8125rem;
+    font-weight: 400;
+    color: #70747D;
+}
+
+.awards {
+    margin: 1.1875rem;
+}
+
+.nav-create-post-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-create-post {
+    display: flex;
+}
+
+.nav-email-container {
+    position: relative;
+    width: 240px;
+    background-color: #F3F5F7;
+    height: 4.125rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 8.5625;
+    border-radius: 5px;
+    margin-right: 2rem;
+}
+
+.nav-email-container input {
+    border: none;
+    background-color: inherit;
+    width: 100%;
+    background-image: url("Assets/Icons/General Icons/Email.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 2rem;
+    font-weight: 400;
+}
+
+.nav-submit-btn {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 1.3125rem;
+    padding-bottom: 1.3125rem;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+}
+

@@ -21,12 +21,14 @@ a, a:hover, a:focus, a:active {
 body {
     min-height: 100vh;
     font-family: 'Inter', sans-serif;
+    max-width: 100%;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-top: 3.3125rem;
     margin-left: 7.5rem;
     margin-right: 7.5rem;
@@ -39,6 +41,7 @@ nav {
     margin-bottom: 1.25rem;
     display: flex;
     align-items: center;
+    min-width: max-content;
 }
 
 .navbar-links {
@@ -50,9 +53,6 @@ nav {
     padding: 0.8125rem;
     font-weight: 400;
     color: #70747D;
-}
-
-.awards {
     margin: 1.1875rem;
 }
 
@@ -90,6 +90,7 @@ nav {
     background-size: contain;
     padding-left: 2rem;
     font-weight: 400;
+    outline: none;
 }
 
 .nav-submit-btn {
@@ -102,5 +103,43 @@ nav {
     background-color: black;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
 }
+
+.navbar-toggle-btn {
+    position: relative;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px
+}
+
+.navbar-toggle-btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--headings);
+    border-radius: 10px;
+}
+
+@media (max-width: 1023px) {
+    .navbar {
+        margin-left: 1.6875rem;
+        margin-right: 1.6875rem;
+        margin-top: 2rem;
+    }
+    .navbar-toggle-btn {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .nav-create-post-container {
+        display: none;
+    }
+}
+
+
 

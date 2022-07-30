@@ -24,21 +24,23 @@ body {
     max-width: 100%;
 }
 
+/* Navbar */
+
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3.3125rem;
-    margin-left: 7.5rem;
-    margin-right: 7.5rem;
+    margin-top: 2.5rem;
+    margin-left: 5.625rem;
+    margin-right: 5.625rem;
 }
 
 .brand-name {
-    font-size: 1.3125rem;
+    font-size: 1rem;
     font-weight: 700;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
     display: flex;
     align-items: center;
     min-width: max-content;
@@ -50,10 +52,10 @@ nav {
 }
 
 .navbar-links a {
-    padding: 0.8125rem;
+    padding: 0.625rem;
     font-weight: 400;
     color: #70747D;
-    margin: 1.1875rem;
+    margin: 0.875rem;
 }
 
 .nav-create-post-container {
@@ -63,21 +65,22 @@ nav {
 
 .nav-create-post {
     display: flex;
+    align-items: center;
 }
 
 .nav-email-container {
     position: relative;
-    width: 240px;
+    width: 289px;
     background-color: #F3F5F7;
-    height: 4.125rem;
+    height: 49px;
     display: flex;
     align-items: center;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-right: 8.5625;
+    padding-right: auto;
     border-radius: 5px;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
 
 .nav-email-container input {
@@ -94,10 +97,10 @@ nav {
 }
 
 .nav-submit-btn {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
-    padding-top: 1.3125rem;
-    padding-bottom: 1.3125rem;
+    padding-left: 1.3125rem;
+    padding-right: 1.3125rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-weight: 700;
     color: white;
     background-color: black;
@@ -112,21 +115,13 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 21px
-}
-
-.navbar-toggle-btn .bar {
-    height: 3px;
-    width: 100%;
-    background-color: var(--headings);
-    border-radius: 10px;
 }
 
 @media (max-width: 1023px) {
     .navbar {
-        margin-left: 1.6875rem;
-        margin-right: 1.6875rem;
-        margin-top: 2rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        margin-top: 2.5rem;
     }
     .navbar-toggle-btn {
         display: flex;
@@ -139,7 +134,69 @@ nav {
     .nav-create-post-container {
         display: none;
     }
+
+    #sidebar-left {
+        display: none;
+    }
 }
+
+/* Hero Section */
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.25rem;
+    margin-left: 5.625rem;
+    margin-right: 5.625rem;
+}
+
+.sidebar-left {
+    display: flex;
+    flex-direction: column;
+    color: var(--body);
+}
+
+.sidebar-left-categories {
+    display: flex;
+    padding-right: auto;
+    padding-left: 1rem;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+}
+
+.sidebar-left-categories img {
+    margin-right: 0.75rem;
+}
+
+.sidebar-left-line-break {
+    border-top: 1px solid var(--stroke);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+}
+
+.sidebar-left-social {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.03125rem;
+    padding-bottom: 1.03125rem;
+}
+
+.social-flex-div {
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+.sidebar-left-social p {
+    margin-left: 0.75rem;
+}
+
+.sidebar-left-social-hyperlink {
+    margin-right: 0.75rem;
+}
+
+
 
 
 

@@ -20,8 +20,8 @@ a, a:hover, a:focus, a:active {
 
 body {
     min-height: 100vh;
+    min-width: 100vw;
     font-family: 'Inter', sans-serif;
-    max-width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -36,6 +36,7 @@ nav {
     margin-top: 2.5rem;
     margin-left: 5.625rem;
     margin-right: 5.625rem;
+    max-width: 100%;
 }
 
 .brand-name {
@@ -127,6 +128,7 @@ main {
     margin-top: 3.25rem;
     margin-left: 5.625rem;
     margin-right: 5.625rem;
+    max-width: 100%;
 }
 
 /* left section */
@@ -390,6 +392,10 @@ main {
 }
 
 /* right section */
+.sidebar-right {
+
+    max-height: 21.625rem;
+}
 .search-modal {
     display: flex;
     align-items: center;
@@ -533,6 +539,58 @@ main {
     color: var(--body);
 }
 
+/* footer-section */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.newsletter-container {
+    background-color: #000000;
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 3.75rem;
+    margin-right: 3.75rem;
+    max-width: 51.25rem;
+}
+
+.newsletter-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3.5rem 2.625rem 4.5rem 3.5rem;
+}
+
+.newsletter-left h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter-left p {
+    font-size: 1rem; 
+    font-weight: 400;
+    color: #ADADAD; 
+    margin-bottom: 1rem;
+}
+
+.newsletter-left input {
+    padding: 1rem 1rem 1rem 1.5rem;
+    margin-right: 0.75rem;
+    color: var(--body);
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.newsletter-container img {
+    margin-top: 3.5rem;
+}
+
 /* For tablet view */
 @media (max-width: 1023px) {
 /* Navbar */
@@ -575,6 +633,18 @@ main {
     .sidebar-right {
         display: none;
     }
+    
+    /* Footer */
+    footer {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+    /* Newsletter */
+    .newsletter-container {
+        margin: 0px;
+        width: 100%;
+    }
 }
+
 
 

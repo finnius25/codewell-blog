@@ -396,6 +396,77 @@ main {
     line-height: 150%;
 }
 
+.cookie-consent-container {
+    position: absolute;
+    right: 5.625rem;
+    bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    width: 24.875rem;
+    background-color: #FFFFFF;
+    border: 1px solid var(--stroke);
+    border-radius: 5px;
+}
+
+.cookie-consent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2.25rem 2.25rem 1.125rem 2.25rem;
+}
+
+.cookie-consent span {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.cookie-consent h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.53125rem;
+    color: #000000;
+    width: auto;
+}
+
+.cookie-consent p {
+    font-size: 1rem;
+    color: var(--body);
+    line-height: 150%;
+}
+
+.cookie-consent strong {
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.cookie-btns {
+    display: flex;
+    margin: 0 2.25rem 2.25rem 2.25rem;
+}
+
+.cookie-btns button {
+    width: 10.75rem;
+    height: 3.0625rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 0.875rem;
+}
+
+.cookie-btns :first-child {
+    background-color: #000000;
+    color: white;
+    margin-right: 0.75rem;
+}
+
+.cookie-btns :last-child {
+    background: none;
+    border: 1px solid var(--stroke);
+    color: var(--body);
+}
 
 
 /* For tablet view */

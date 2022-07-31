@@ -324,6 +324,71 @@ main {
     height: 100%;
 }
 
+.pagination-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination {
+    display: flex;
+    height: 2.0625rem;
+    align-items: center;
+    margin-top: 1.90625rem;
+}
+
+.pagination button {
+    border: none;
+    background: none;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.pagination-left-arrow {
+    margin-right: 1rem;
+}
+
+.pagination-left-arrow img {
+    transform: rotate(-180deg);
+}
+
+.pagination-right-arrow {
+    margin-left: 1rem;
+}
+
+.pagination-numbers-container {
+    display: flex;
+}
+
+.pagination-number {
+    margin-left: 0.375rem;
+    margin-right: 0.375rem;
+    height: 100%;
+    font-size: 0.875rem;
+    width: 1.9375rem;
+    height: 2.0625rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pagination span:first-child {
+    margin-left: 0px;
+}
+
+.pagination span:last-child {
+    margin-right: 0px;
+}
+
+.pagination-number:hover {
+    background: #000000;
+    color: white;
+    font-weight: 700;
+}
+
 /* right section */
 .search-modal {
     display: flex;
@@ -397,7 +462,7 @@ main {
 }
 
 .cookie-consent-container {
-    position: absolute;
+    position: fixed;
     right: 5.625rem;
     bottom: 3vh;
     display: flex;
@@ -467,7 +532,6 @@ main {
     border: 1px solid var(--stroke);
     color: var(--body);
 }
-
 
 /* For tablet view */
 @media (max-width: 1023px) {

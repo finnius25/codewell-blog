@@ -8,6 +8,7 @@
     <title>Personal Website</title>
 </head>
 <body>
+
     <nav class="navbar">
         <div class="brand-name">
             Jessica Davidson
@@ -22,7 +23,7 @@
                 <div class="nav-email-container">
                     <input type="text" id="nav-email" placeholder="john@example.com">
                 </div>
-                <input type="submit" value="Create new post" class="nav-submit-btn">
+                <button type="submit" class="nav-submit-btn">Create new post</button>
             </form>
         </div>
         <div class="navbar-toggle-btn">
@@ -31,6 +32,7 @@
     </nav>
 
     <main>       
+
         <div class="sidebar-left">
             <ul class="sidebar-left-top-list">
                 <li class="sidebar-left-categories">
@@ -73,7 +75,8 @@
         </div>
 
         <div class="hero-container">
-            <div class="post" id="post1">
+
+            <div class="post post1">
                     <div class="post-child-left-content">
                         <div class="post-section">
                             <h3>Understanding the reasons behind a successful startup</h3>
@@ -91,7 +94,7 @@
                         <span class="post-date">23/11/2021</span>
                     </div>
             </div>
-            <div class="post" id="post2">
+            <div class="post post2">
                 <div class="post2-child-left-content">
                     <h3>Announcing a new platform, Codewell.</h3>
                     <p>Codewell is a platform that helps you improve your frontend skills by practicing on real world design templates.</p>
@@ -104,7 +107,7 @@
                     <img src="assets/Images/Illustration.svg" alt="Illustration">
                 </div>
             </div>
-            <div class="post" id="post3">
+            <div class="post post3">
                 <div class="post-child-left-content">
                     <div class="post-section">
                         <h3>I quit my job last year to pursue freelancing full time.</h3>
@@ -122,6 +125,8 @@
                     <span class="post-date">20/11/2021</span>
                 </div>
             </div>
+
+
             <div class="pagination-container">
                 <div class="pagination">
                     <button type="button" class="pagination-left-arrow"><img src="assets/Icons/General Icons/Arrow Right.svg" alt="Left arrow"></button>
@@ -135,13 +140,28 @@
                     <button type="button" class="pagination-right-arrow"><img src="assets/Icons/General Icons/Arrow Right.svg" alt="Right arrow"></button>
                 </div>
             </div>
+
+
+            <div class="newsletter-container">
+                <div class="newsletter-left">
+                    <div class="newsletter-content">
+                        <h4>Want to stay up to date with my project Codewell?</h4>
+                        <p>Receive non-frequent emails about my startup Codewell, you can unsubscribe any time.</p>
+                    </div>
+                    <input type="text" placeholder="john@example.com">
+                </div>
+                <img src="/Assets/Images/newsletter-image.png" alt="Newsletter image">
+            </div>
+
         </div>
 
         <div class="sidebar-right">
             <div class="default">
                 <form action="#" class="search-modal">
                     <input type="text" placeholder="Search Posts">
-                    <button type="submit" class="search-modal-btn">⌘S</button>
+                    <div class="default-btn-container">
+                        <button type="submit" class="search-modal-btn">⌘S</button>
+                    </div>
                 </form>
             </div>
             <div class="projects">
@@ -169,18 +189,13 @@
     </main>
 
     <footer>
-        <div class="newsletter-container">
-            <div class="newsletter-left">
-                <div class="newsletter-content">
-                    <h4>Want to stay up to date with my project Codewell?</h4>
-                    <p>Receive non-frequent emails about my startup Codewell, you can unsubscribe any time.</p>
-                </div>
-                <input type="text" placeholder="john@example.com">
-            </div>
-            <img src="/Assets/Images/newsletter-image.png" alt="Newsletter image">
-        </div>
         <div class="footer-section">
-
+                <h4>Jessica Davidson</h4>
+            <p>© 2021 Jessica Davidson, All Rights Reserved</p>
+            <ul>
+                <li>LinkedIn</li>
+                <li>Twiiter</li>
+            </ul>
         </div>
     </footer>
 </body>
